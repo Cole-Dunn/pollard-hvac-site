@@ -1,0 +1,75 @@
+Your Goal: To create the missing Decap CMS admin files that were missed in the initial build.
+
+Instructions for the AI:
+You missed a step in the initial project setup. I need you to create the admin panel files now. Do not alter any other existing files.
+
+1. Create the admin Folder:
+
+In the project's root directory, create a new folder named admin.
+
+2. Create the admin/config.yml File:
+
+Inside the new admin folder, create a file named config.yml.
+
+Paste the following code exactly as it is into that file:
+
+YAML
+
+backend:
+  name: github
+  repo: your-github-username/your-repo-name # IMPORTANT: Placeholder
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/static/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Page Content"
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "_data/content.json"
+        fields:
+          - { label: "Main Headline", name: "main_headline", widget: "string" }
+          - { label: "About Us Text", name: "about_us_text", widget: "text" }
+          - label: "Core Services"
+            name: "core_services"
+            widget: "list"
+            fields:
+              - { label: "Service Name", name: "name", widget: "string" }
+              - { label: "Service Description", name: "description", widget: "text" }
+          - label: "Why Choose Us Points"
+            name: "why_choose_us_points"
+            widget: "list"
+            fields:
+              - { label: "Point", name: "point", widget: "string" }
+          - label: "Reviews"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Customer Name", name: "customer_name", widget: "string" }
+              - { label: "Rating (1-5)", name: "rating", widget: "number" }
+          - { label: "Contact Phone", name: "contact_phone", widget: "string" }
+          - { label: "Contact Address", name: "contact_address", widget: "string" }
+3. Create the admin/index.html File:
+
+Inside the admin folder, create another file named index.html.
+
+Paste the following code exactly as it is into that file:
+
+HTML
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>

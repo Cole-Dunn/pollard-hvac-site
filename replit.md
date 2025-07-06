@@ -93,7 +93,25 @@ This is a full-stack web application for Pollard Heating & Cooling, a local HVAC
 ```
 Changelog:
 - July 06, 2025. Initial setup
+- July 06, 2025. Added Decap CMS admin files for content management
 ```
+
+## CMS Integration
+
+### Decap CMS Setup
+- **Admin Panel**: Located at `/admin` route with full content management interface
+- **Configuration**: `admin/config.yml` with GitHub backend integration
+- **Content Storage**: JSON file at `_data/content.json` with all editable fields
+- **Media Storage**: Images uploaded to `static/images/uploads/` directory
+- **Editable Fields**: Main headline, about text, services, testimonials, contact info
+
+### CMS Fields Structure
+- **Main Headline**: Site hero text
+- **About Us Text**: Company description and mission
+- **Core Services**: List of HVAC services with names and descriptions
+- **Why Choose Us Points**: Benefits and differentiators
+- **Reviews**: Customer testimonials with ratings
+- **Contact Information**: Phone number and address
 
 ## User Preferences
 

@@ -1,0 +1,58 @@
+{
+  "main_headline": "Professional HVAC Services",
+  "about_us_text": "Family-owned HVAC company serving West Lorne and surrounding communities. Specializes in heating, cooling, and oil tank service. Trusted locally for honest, fast, and professional work.",
+  "core_services": [
+    {
+      "name": "Furnace Installation & Repair",
+      "description": "Professional furnace installation, repair, and maintenance services to keep your home warm and comfortable all winter long."
+    },
+    {
+      "name": "Air Conditioning Installation & Repair",
+      "description": "Expert AC installation and repair services to ensure your home stays cool and comfortable during hot summer months."
+    },
+    {
+      "name": "Oil Tank Servicing",
+      "description": "Complete oil tank maintenance and servicing to ensure safe and efficient operation of your heating system."
+    },
+    {
+      "name": "HVAC Maintenance (Residential & Light Commercial)",
+      "description": "Comprehensive maintenance services for residential and light commercial HVAC systems to prevent costly breakdowns."
+    }
+  ],
+  "why_choose_us_points": [
+    {
+      "point": "Over 20 years of local experience"
+    },
+    {
+      "point": "Friendly, certified technicians"
+    },
+    {
+      "point": "Emergency availability"
+    },
+    {
+      "point": "Clean, professional service"
+    },
+    {
+      "point": "Fair and transparent pricing"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Great local company! Fixed my furnace same day — very friendly and professional.",
+      "customer_name": "Samantha L.",
+      "rating": 5
+    },
+    {
+      "quote": "They installed a new A/C unit and did an amazing job. Clean, fast, and honest.",
+      "customer_name": "James R.",
+      "rating": 5
+    },
+    {
+      "quote": "Highly recommend Pollard. We've used them for years and always had great service.",
+      "customer_name": "Megan W.",
+      "rating": 5
+    }
+  ],
+  "contact_phone": "519-768-2800",
+  "contact_address": "10182 Graham Road (RR 2), West Lorne, ON N0L 2P0"
+}
