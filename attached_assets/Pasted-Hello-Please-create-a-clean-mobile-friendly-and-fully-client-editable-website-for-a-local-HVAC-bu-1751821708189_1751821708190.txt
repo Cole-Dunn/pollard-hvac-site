@@ -1,0 +1,121 @@
+Hello! Please create a clean, mobile-friendly, and fully client-editable website for a local HVAC business.
+
+The final product must be built on a robust framework using Decap CMS to manage all content. All instructions, especially the file path rules, must be followed precisely.
+
+Part 1: Core Business & Design Specifications
+Business Name: Pollard Heating & Cooling
+
+Location: West Lorne, Ontario
+
+Contact Info:
+
+Phone: 519-768-2800
+
+Address: 10182 Graham Road (RR 2), West Lorne, ON N0L 2P0
+
+Logo: Create a simple SVG icon placeholder featuring a red flame next to a blue snowflake, followed by the business name.
+
+Design Guidelines:
+
+Use a professional red and blue color scheme.
+
+Use clean, clear fonts like Open Sans with large, readable text.
+
+The layout must be fully responsive and built using Bootstrap 5.
+
+Include a sticky navigation bar and a footer with contact info and a copyright notice for the current year.
+
+Part 2: Technical Framework (Strict Instructions)
+2A. File Path & Linking Rules:
+
+All custom CSS files must be placed in the /static/css/ directory.
+
+In index.html, the link to the main stylesheet must be exactly <link rel="stylesheet" href="/static/css/style.css">.
+
+All custom JavaScript files must be placed in the /static/js/ directory.
+
+In index.html, the script tag must be exactly <script src="/static/js/main.js"></script>.
+
+All user-uploaded images from the CMS must be configured to save to /static/images/uploads/.
+
+2B. Project Structure:
+Based on the rules above, create this exact structure:
+
+index.html
+
+admin/ (containing index.html and config.yml)
+
+_data/ (leave empty)
+
+static/
+
+css/ (containing style.css)
+
+js/ (containing main.js)
+
+images/uploads/ (leave empty)
+
+2C. CMS Configuration (admin/config.yml):
+Configure Decap CMS with a GitHub backend (use a placeholder for the repo URL). The editable fields must include:
+
+A text block for about_us_text.
+
+A list widget for core_services (with name and description).
+
+A list widget for why_choose_us_points (with a single point text field).
+
+A list widget for reviews (with quote, customer_name, and rating number fields).
+
+A list widget for navigation_links (with text and url fields).
+
+A string for contact_phone.
+
+A string for contact_address.
+
+2D. Website Skeleton & Logic:
+
+index.html: Create the HTML skeleton. It must link to Bootstrap 5 CSS and use the strictly defined paths for local CSS/JS. It must contain empty container elements with IDs matching the CMS fields (e.g., <div id="about-us-container"></div>, <div id="services-container"></div>, <div id="reviews-container"></div>, etc.).
+
+admin/index.html: Add the standard code to load and run Decap CMS.
+
+static/js/main.js: Write the JavaScript to fetch /_data/content.json and dynamically populate all corresponding container IDs in the HTML.
+
+Part 3: Initial Website Content
+Use the following information as the default content for the editable fields. The JavaScript should render this content on the initial page load.
+
+About Us (about_us_text):
+
+"Family-owned HVAC company serving West Lorne and surrounding communities. Specializes in heating, cooling, and oil tank service. Trusted locally for honest, fast, and professional work."
+
+Services List (core_services):
+
+Furnace installation & repair
+
+Air conditioning installation & repair
+
+Oil tank servicing
+
+HVAC maintenance (residential & light commercial)
+
+Why Choose Us List (why_choose_us_points):
+
+Over 20 years of local experience
+
+Friendly, certified technicians
+
+Emergency availability
+
+Clean, professional service
+
+Fair and transparent pricing
+
+Reviews List (reviews):
+
+Quote: "Great local company! Fixed my furnace same day — very friendly and professional." Name: Samantha L. Rating: 5
+
+Quote: "They installed a new A/C unit and did an amazing job. Clean, fast, and honest." Name: James R. Rating: 5
+
+Quote: "Highly recommend Pollard. We've used them for years and always had great service." Name: Megan W. Rating: 5
+
+Contact Form:
+Create a styled (but non-functional) contact form with fields for Name, Email, Phone, and Message.
