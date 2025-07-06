@@ -1,0 +1,173 @@
+/* Open Sans Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Custom CSS Variables */
+:root {
+  --primary-red: #DC3545;
+  --primary-blue: #0D6EFD;
+  --neutral-gray: #6C757D;
+  --light-gray: #F8F9FA;
+  --dark-gray: #343A40;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-blue) 100%);
+}
+
+/* Custom Button Styles */
+.btn-custom {
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Service Cards */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.service-icon.heating {
+  background: var(--primary-red);
+}
+
+.service-icon.cooling {
+  background: var(--primary-blue);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  position: relative;
+  background: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 4rem;
+  color: var(--primary-red);
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Stars */
+.stars {
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 1.2rem;
+}
+
+/* Why Choose Us */
+.why-choose-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.why-choose-item i {
+  color: var(--primary-red);
+  margin-right: 1rem;
+  width: 30px;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+/* Logo */
+#logo-container svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* Navigation */
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-red) !important;
+}
+
+/* Contact Form */
+.form-control:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .service-card {
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Utilities */
+.text-primary-red {
+  color: var(--primary-red) !important;
+}
+
+.text-primary-blue {
+  color: var(--primary-blue) !important;
+}
+
+.bg-primary-red {
+  background-color: var(--primary-red) !important;
+}
+
+.bg-primary-blue {
+  background-color: var(--primary-blue) !important;
+}
